@@ -71,6 +71,16 @@ html[data-theme="dark"]{
             animation: changeGradient 7.5s infinite;
 }
 
+.subtitle {
+    color: var(--black);
+    -webkit-transition: color .5s;
+         -o-transition: color .5s;
+            transition: color .5s;
+	font-size: 1.155rem; 
+	margin-top: 15px; 
+	font-weight: inherit;
+}
+
 .contentBottom{
     width: 300px;
     display: -webkit-box;

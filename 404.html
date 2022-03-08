@@ -3,11 +3,9 @@
 <head>
     <title>404 | Ryan Comerford</title>
 
-    <!-- DATA/META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FAVICONS/ICONS -->
     <meta name="theme-color" content="#0077cc">
     <meta name="msapplication-TileColor" content="#0077cc">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -25,29 +23,25 @@
     <link rel="icon" type="image/png" sizes="96x96" href="build/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
 
-    <!-- CSS -->
     <link rel=stylesheet type="text/css" href="build/style.css" />
 </head>
 <body>
-    <!-- DARK MODE SWITCH -->
+
     <div class="switchWrapper">
         <input id="switch" type="checkbox" hidden aria-label="Toggle dark mode" />
         <label for="switch" class="switch"></label>
     </div>
 
-    <!-- LANDING -->
     <div class="contentCenter">
         <h1 class="title">Error <b>404</b></h1>
     </div>
 
-    <!-- REDIRECT TEXT -->
     <div class="contentBottom" style="text-align: center;">
         <p>Redirecting in <b id="redirectNum">11</b><br>
             <b style="font-weight: inherit;font-size: 0.7em">If redirecting fails, click <a href="/" style="color: #0077cc">here</a>.
         </p>
     </div>
 
-    <!-- JS -->
     <script src="./build/darkmode.js" async></script>
     <script src="./build/redirect.js" async></script>
 </body>
