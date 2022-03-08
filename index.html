@@ -3,7 +3,6 @@
 <head>
     <title>Ryan Comerford</title>
 
-    <!-- DATA/META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Ryan Comerford">
@@ -20,7 +19,6 @@
     <meta property="twitter:description" content="Hi, I'm Ryan and I make websites.">
     <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
 
-    <!-- FAVICONS/ICONS -->
     <meta name="theme-color" content="#0077cc">
     <meta name="msapplication-TileColor" content="#0077cc">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -38,49 +36,83 @@
     <link rel="icon" type="image/png" sizes="96x96" href="build/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
 
-    <!-- CSS -->
-    <link rel=stylesheet type="text/css" href="build/style.css" />
+    <link rel="stylesheet" type="text/css" href="build/style.css" />
 
-    <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/63039f3aff.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- DARK MODE SWITCH -->
-    <div class="switchWrapper">
-        <input id="switch" type="checkbox" hidden aria-label="Toggle dark mode" />
-        <label for="switch" class="switch"></label>
+	<main id="elem">
+		<section class="Page1">
+			<div class="switchWrapper">
+				<input id="switch" type="checkbox" hidden aria-label="Toggle dark mode" />
+				<label for="switch" class="switch"></label>
 
-        <div class="swichPrompt">
-			<div class="arrow"></div>
-            <button id="prompt" class="switchButton">Automatically set dark mode?</button>
-            <div class="instructions">
-                For this to work, access to your computer's location is required.
-            </div>
-        </div>
-    </div>
+				<div class="swichPrompt">
+					<div class="arrow"></div>
+					<button id="prompt" class="switchButton">Automatically set dark mode?</button>
+					<div class="instructions">For this to work, access to your computer's location is required.</div>
+				</div>
+			</div>
+			<div class="contentCenter">
+				<h1 class="title">Hi, I'm <b>Ryan</b></h1>
+				<h1 style="font-size: 1.155rem; margin-top: 15px">I'm a web developer and RMIT Software Engineering student. Scroll down to see and play with my favourite past projects.</h1>
+			</div>
+			<div class="contentBottom">
+				<a class="link" tabindex="1" href="https://github.com/ryncmrfrd"    rel="noopener" noreferrer aria-label="My Github"    title="My Github">   
+					<i aria-hidden="true" class="fab fa-github" title="Github Logo"></i>
+				</a>
+				<a class="link" tabindex="2" href="https://twitter.com/ryncmrfrd"   rel="noopener" noreferrer aria-label="My Twitter"   title="My Twitter">  
+					<i aria-hidden="true" class="fab fa-twitter" title="Twitter Logo"></i>
+				</a>
+				<a class="link" tabindex="3" href="https://instagram.com/ryncmrfrd" rel="noopener" noreferrer aria-label="My Instagram" title="My Instagram">
+					<i aria-hidden="true" class="fab fa-instagram" title="Instagram Logo"></i>
+				</a>
+				<a class="link" tabindex="4" href="mailto:ryncmrfrd@outlook.com"    rel="noopener" noreferrer aria-label="My Email"     title="My Email">
+					<i aria-hidden="true" class="far fa-envelope" title="Email Icon"></i>
+				</a>
+			</div>
+		</section>
+		<section class="Page2">
+			<div>
+				<a>
+					<h1 class="title">My <b>Projects</b></h1>
+				</a>
+			</div>
+			<div>
+				<a class="safctv" href="https://sunderlandafc.tv">
+					<h2><span>SUNDERLANDAFC</span>.TV</h2>
+					<h3>A retro Sunderland AFC fan site.</h3>
+				</a>
+				<a class="pageination" href="https://pageination.ryncmrfrd.com">
+					<h2>pageination.js</h2>
+					<h3>Simple, free, single-page websites.<br>Plus, it's running on this site.</h3>
+				</a>
+			</div>
+			<div>
+				<a class="pascal" href="https://pascal.ryncmrfrd.com">
+					<h2>pascal</h2>
+					<h3>simple pascal's triange generator in js.</h3>
+				</a>
+				<a class="tasks" href="https://tasks.ryncmrfrd.com">
+					<h2>Tasks for Web</h2>
+					<h3>Google Tasks API implementation for web.</h3>
+				</a>
+			</div>
+			<div>
+				<a class="tweets" href="https://github.com/ryncmrfrd/tweetmyhistory#-tweet-my-history">
+					<h2>TweetMyHistory</h2>
+					<h3>The Chrome extention which tweets a <br>random Google search from your history.</h3>
+				</a>
+				<a class="graphing" href="https://github.com/ryncmrfrd/graphingcalculator">
+					<h2>Graphing Calculator</h2>
+					<h3>A graphing calculator using winforms and visual basic.</h3>
+				</a>
+			</div>
 
-    <!-- LANDING -->
-    <div class="contentCenter">
-        <h1 class="title">Hi, I'm <b>Ryan</b></h1>
-    </div>
-
-    <!-- SOCIAL LINKS -->
-    <div class="contentBottom">
-        <a class="link" tabindex="1" href="https://github.com/ryncmrfrd"    rel="noopener" noreferrer aria-label="My Github"    title="My Github">   
-            <i aria-hidden="true" class="fab fa-github" title="Github Logo"></i>
-        </a>
-        <a class="link" tabindex="2" href="https://twitter.com/ryncmrfrd"   rel="noopener" noreferrer aria-label="My Twitter"   title="My Twitter">  
-            <i aria-hidden="true" class="fab fa-twitter" title="Twitter Logo"></i>
-        </a>
-        <a class="link" tabindex="3" href="https://instagram.com/ryncmrfrd" rel="noopener" noreferrer aria-label="My Instagram" title="My Instagram">
-            <i aria-hidden="true" class="fab fa-instagram" title="Instagram Logo"></i>
-        </a>
-        <a class="link" tabindex="4" href="mailto:ryncmrfrd@outlook.com"    rel="noopener" noreferrer aria-label="My Email"     title="My Email">
-            <i aria-hidden="true" class="far fa-envelope" title="Email Icon"></i>
-        </a>
-    </div>
-
-    <!-- JS -->
+		</section>
+	</main>
     <script src="./build/darkmode.js" async></script>
+	<script src="./build/pageination.js" async></script>
+	<script src="./build/home.js" async></script>
 </body>
 </html>

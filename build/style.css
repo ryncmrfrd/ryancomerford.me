@@ -47,7 +47,7 @@ html[data-theme="dark"]{
             transform: translate(-50%, -50%);
 }
 
-.contentCenter .title {
+.title {
     color: var(--black);
     -webkit-transition: color .5s;
          -o-transition: color .5s;
@@ -56,7 +56,7 @@ html[data-theme="dark"]{
     white-space: nowrap;
 }
 
-.contentCenter .title b{
+.title b{
     font-weight: inherit;
     background: -webkit-linear-gradient(-45deg, #0077cc, #009dd0, #e73c7e, #ee7752);
     color: #0077cc;
@@ -266,6 +266,148 @@ input:checked + .switch:active:before {
 .swichPrompt .instructions{
 	margin-top: 3px;
 	margin-left: 9px;
+}
+
+
+/* -------------- SECOND PAGE -------------- */
+
+.Page2{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.Page2 div{
+	display: flex;
+
+	height: 100%;
+}
+
+.Page2 div a{
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Sunderlandafc.tv */
+
+.Page2 div a.safctv{
+	background: #eb1428;
+	color: black;
+	text-decoration: none;
+}
+
+.Page2 div a.safctv h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.safctv h2 span{
+	color: white;
+}
+
+.Page2 div a.safctv h3{
+	margin-top: 10px;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+/* Pageination */
+
+.Page2 div a.pageination{
+	background: #3e8ed0;
+	color: white;
+	text-decoration: none;
+}
+
+.Page2 div a.pageination h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.pageination h3{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* Tasks for web */
+
+.Page2 div a.tasks{
+	background: #23d160;
+	color: white;
+	text-decoration: none;
+}
+
+.Page2 div a.tasks h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.tasks h3{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+/* Pascal generator */
+
+.Page2 div a.pascal{
+	background: black;
+	color: white;
+	text-decoration: none;
+	font-family: monospace;
+}
+
+.Page2 div a.pascal h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.pascal h3{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+/* Tweets for web */
+
+.Page2 div a.tweets{
+	background: #1da1f2;
+	color: white;
+	text-decoration: none;
+}
+
+.Page2 div a.tweets h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.tweets h3{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* Tweets for web */
+
+.Page2 div a.graphing{
+	color: var(--black);
+	background-color: var(--white);
+	text-decoration: none;
+}
+
+.Page2 div a.graphing h2{
+	font-size: 2.5rem;
+}
+
+.Page2 div a.graphing h3{
+	margin-top: 10px;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
 }
 
 /* -------------- RESPONSIVE DESIGN -------------- */
