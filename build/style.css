@@ -1,4 +1,11 @@
-a/* -------------- RESET -------------- */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* -------------- RESET -------------- */
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
@@ -229,6 +236,8 @@ input:checked + .switch:active:before {
     font: normal 12px "Segoe UI", Arial, Sans-serif;
     border-radius: 5px;
     border: 1px solid var(--lightgrey);
+	-webkit-transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
+	-o-transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
 	transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
 }
 
@@ -250,6 +259,8 @@ input:checked + .switch:active:before {
     border: solid 13px transparent;
     border-top: 0;
     border-bottom-color: var(--white);
+	-webkit-transition: border-bottom-color .5s;
+	-o-transition: border-bottom-color .5s;
 	transition: border-bottom-color .5s;
 }
 
@@ -257,12 +268,16 @@ input:checked + .switch:active:before {
     top: -13.5px;
     z-index: 1;
     border-bottom-color: var(--lightgrey);
+	-webkit-transition: border-bottom-color .5s;
+	-o-transition: border-bottom-color .5s;
 	transition: border-bottom-color .5s;
 }
 
 .swichPrompt .switchButton,
 .swichPrompt .switchButton:active,
 .swichPrompt .switchButton:focus{
+	-webkit-transition: color .5s, background .5s;
+	-o-transition: color .5s, background .5s;
 	transition: color .5s, background .5s;
 	outline: none;
 	border: none;
@@ -285,11 +300,20 @@ input:checked + .switch:active:before {
 	width: 100%;
 	height: 100%;
 	
+	display: -webkit-box;
+	
+	display: -ms-flexbox;
+	
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .Page2 div{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	height: 100%;
@@ -297,11 +321,24 @@ input:checked + .switch:active:before {
 
 .Page2 div a{
 	width: 100%;
+    width: 50%;
+    max-width: 50%;
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
 
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 /* Sunderlandafc.tv */
