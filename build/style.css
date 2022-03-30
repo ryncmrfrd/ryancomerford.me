@@ -341,6 +341,11 @@ input:checked + .switch:active:before {
 	        align-items: center;
 }
 
+.Page2 div a.singleRow{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 /* Sunderlandafc.tv */
 
 .Page2 div a.safctv{
@@ -480,3 +485,5 @@ input:checked + .switch:active:before {
         width: calc(100% - 10px)
     }
 }
+
+/* TODO: FINISH, PARTICULARLY FOR PAGE 2 & PAGE 1 DESCRIPTION*/
