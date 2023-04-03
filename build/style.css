@@ -42,16 +42,32 @@ html[data-theme="dark"]{
 
 /* -------------- GENERAL PAGE -------------- */
 
+section{
+    position: relative;
+}
+
 .contentCenter{
+    width: 100%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
+    text-align: center;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: tran 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+}
+
+.contentCenter > *{
+    margin: 1.25rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .contentCenter{
+        width: calc(100% - 10px)
+    }
 }
 
 .title {
@@ -78,14 +94,59 @@ html[data-theme="dark"]{
             animation: changeGradient 7.5s infinite;
 }
 
-.subtitle {
+.links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.75rem;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover i,
+.link:focus i{ color: #0077cc }
+
+.link:focus{
+    outline: 1px solid var(--lightgrey) !important
+}
+
+.link i, .link p{
     color: var(--black);
+    transition: color .2s ease-in-out, outline .2s ease-in-out;
+}
+
+
+.contentCenter .link:hover:nth-of-type(1) i,
+.contentCenter .link:focus:nth-of-type(1) i{ color: #6e5494 !important }
+
+.contentCenter .link:hover:nth-of-type(2) i,
+.contentCenter .link:focus:nth-of-type(2) i{ color: #1da1f2 !important }
+
+.contentCenter .link:hover:nth-of-type(3) i,
+.contentCenter .link:focus:nth-of-type(3) i{ color: #0d3880 !important }
+
+.subtitle {
     -webkit-transition: color .5s;
          -o-transition: color .5s;
             transition: color .5s;
-	font-size: 1.155rem; 
-	margin-top: 15px; 
+	font-size: 1.23rem; 
+    line-height: 1.5;
+    text-align: center;
 	font-weight: inherit;
+    color: var(--lightgrey);
+    white-space: nowrap;
+}
+
+.downArrow{
+    color: var(--black);
+    font-size: 5vh;
+    margin-top: 2.5rem;
+    text-align: center;
 }
 
 .contentBottom{
@@ -95,7 +156,7 @@ html[data-theme="dark"]{
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    font-size: 1.75em;
+    font-size: 2.5em;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -103,35 +164,6 @@ html[data-theme="dark"]{
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
-
-.contentBottom a{
-    text-decoration: none;
-    color: black;
-}
-
-.contentBottom a:focus{
-    outline: 1px solid transparent
-}
-
-.contentBottom a i, .contentBottom p{
-    color: var(--black);
-    -webkit-transition: color .2s ease-in-out;
-         -o-transition: color .2s ease-in-out;
-            transition: color .2s ease-in-out
-}
-
-
-.contentBottom a:hover:nth-of-type(1) i,
-.contentBottom a:focus:nth-of-type(1) i{ color: #6e5494 }
-
-.contentBottom a:hover:nth-of-type(2) i,
-.contentBottom a:focus:nth-of-type(2) i{ color: #1da1f2 }
-
-.contentBottom a:hover:nth-of-type(3) i,
-.contentBottom a:focus:nth-of-type(3) i{ color: #dd2a7b }
-
-.contentBottom a:hover:nth-of-type(4) i,
-.contentBottom a:focus:nth-of-type(4) i{ color: #0077cc }
 
 @-webkit-keyframes changeGradient {
 	0% { background-position: 0% 50%; color: #009dd0; }
@@ -148,10 +180,11 @@ html[data-theme="dark"]{
 /* -------------- DARK MODE TOGGLE -------------- */
 
 .switchWrapper{
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 10px;
     width: 48px;
+    z-index: 999;
 }
 
 .switch {
@@ -225,85 +258,13 @@ input:checked + .switch:active:before {
             transform: translate3d(100%, -50%, 0) scale(3);
 }
 
-.swichPrompt {
-	width: 187px;
-    position: absolute;
-	top: 43px;
-	right: 18px;
-    padding: 10px;
-	color: var(--lightgrey);
-    background-color: var(--white);
-    font: normal 12px "Segoe UI", Arial, Sans-serif;
-    border-radius: 5px;
-    border: 1px solid var(--lightgrey);
-	-webkit-transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
-	-o-transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
-	transition: border-color .5s, color .5s, background-color .5s, opacity .5s;
-}
-
-.swichPrompt.clicked{
-	opacity: 0
-}
-
-.swichPrompt:before,
-.swichPrompt:after {
-    content: "\0020";
-    display: block;
-    position: absolute;
-    top: -12px;
-    right: 4px;
-    z-index: 2;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    border: solid 13px transparent;
-    border-top: 0;
-    border-bottom-color: var(--white);
-	-webkit-transition: border-bottom-color .5s;
-	-o-transition: border-bottom-color .5s;
-	transition: border-bottom-color .5s;
-}
-
-.swichPrompt::before {
-    top: -13.5px;
-    z-index: 1;
-    border-bottom-color: var(--lightgrey);
-	-webkit-transition: border-bottom-color .5s;
-	-o-transition: border-bottom-color .5s;
-	transition: border-bottom-color .5s;
-}
-
-.swichPrompt .switchButton,
-.swichPrompt .switchButton:active,
-.swichPrompt .switchButton:focus{
-	-webkit-transition: color .5s, background .5s;
-	-o-transition: color .5s, background .5s;
-	transition: color .5s, background .5s;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	text-decoration: underline;
-	padding: 3px 5px;
-	color: var(--black);
-	background: var(--white)
-}
-
-.swichPrompt .instructions{
-	margin-top: 3px;
-	margin-left: 9px;
-}
-
-
 /* -------------- SECOND PAGE -------------- */
 
 .Page2{
 	width: 100%;
 	height: 100%;
-	
 	display: -webkit-box;
-	
 	display: -ms-flexbox;
-	
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -311,23 +272,57 @@ input:checked + .switch:active:before {
 	        flex-direction: column;
 }
 
-.Page2 div{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	height: 100%;
+.discreteLink{
+    color: var(--lightgrey);
 }
 
-.Page2 div a{
-	width: 100%;
-    width: 50%;
-    max-width: 50%;
+.projects{
+    position: relative;
+    height: 300px;
+    width: 1800px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-shadow: 0px 0px 50px -25px var(--black); 
+    box-shadow: 0px 0px 50px -25px var(--black);
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+       transition: box-shadow .5s;
+}
 
+.projects .marquee {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 100%; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 50s linear infinite;
+}
+
+.projects:hover .marquee {
+    animation-play-state: paused;
+}
+
+.projects .marquee.marquee2 {
+    animation-delay: 25s;
+}
+
+@keyframes marquee {
+    0% { left: 100% }
+    100% { left: -100% }  
+}
+
+.projects .marquee > a{
+    height: 100%;
+    min-width: 600px;
+    max-width: 600px;
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -341,121 +336,104 @@ input:checked + .switch:active:before {
 	        align-items: center;
 }
 
-.Page2 div a.singleRow{
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-/* Sunderlandafc.tv */
-
-.Page2 div a.safctv{
+.projects .safctv{
 	background: #eb1428;
 	color: black;
 	text-decoration: none;
 }
 
-.Page2 div a.safctv h2{
+.projects .safctv h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.safctv h2 span{
+.projects .safctv h2 span{
 	color: white;
 }
 
-.Page2 div a.safctv h3{
+.projects .safctv h3{
 	margin-top: 10px;
 	font-size: 1.5rem;
 	font-weight: normal;
 }
 
-/* Pageination */
-
-.Page2 div a.pageination{
+.projects .pageination{
 	background: #3e8ed0;
 	color: white;
 	text-decoration: none;
 }
 
-.Page2 div a.pageination h2{
+.projects .pageination h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.pageination h3{
+.projects .pageination h3{
 	margin-top: 10px;
 	font-size: 1rem;
 	font-weight: normal;
 	text-align: center;
 }
 
-/* Tasks for web */
-
-.Page2 div a.tasks{
+.projects .tasks{
 	background: #23d160;
 	color: white;
 	text-decoration: none;
 }
 
-.Page2 div a.tasks h2{
+.projects .tasks h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.tasks h3{
+.projects .tasks h3{
 	margin-top: 10px;
 	font-size: 1rem;
 	font-weight: normal;
 }
 
-/* Pascal generator */
-
-.Page2 div a.pascal{
+.projects .pascal{
 	background: black;
 	color: white;
 	text-decoration: none;
 	font-family: monospace;
 }
 
-.Page2 div a.pascal h2{
+.projects .pascal h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.pascal h3{
+.projects .pascal h3{
 	margin-top: 10px;
 	font-size: 1rem;
 	font-weight: normal;
 }
 
-/* Tweets for web */
-
-.Page2 div a.tweets{
+.projects .tweets{
 	background: #1da1f2;
 	color: white;
 	text-decoration: none;
 }
 
-.Page2 div a.tweets h2{
+.projects .tweets h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.tweets h3{
+.projects .tweets h3{
 	margin-top: 10px;
 	font-size: 1rem;
 	font-weight: normal;
 	text-align: center;
 }
 
-/* Tweets for web */
-
-.Page2 div a.graphing{
+.projects .graphing{
 	color: var(--black);
 	background-color: var(--white);
 	text-decoration: none;
 }
 
-.Page2 div a.graphing h2{
+.projects .graphing h2{
 	font-size: 2.5rem;
 }
 
-.Page2 div a.graphing h3{
+.projects .graphing h3{
 	margin-top: 10px;
 	font-size: 1rem;
 	font-weight: normal;
@@ -464,26 +442,28 @@ input:checked + .switch:active:before {
 
 /* -------------- RESPONSIVE DESIGN -------------- */
 
-@media only screen and (max-width: 500px) {
-    .contentCenter{
-        width: 250px;
-    }
-
-    .contentCenter .title {
-        white-space: normal;
-    }
-}
-
 @media only screen and (max-width: 300px) {
     .contentBottom{
-        width: 100%
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 250px) {
-    .contentCenter{
-        width: calc(100% - 10px)
+@media only screen and (max-width: 350px) {
+    .links{
+        width: calc(100% - 10px);
     }
 }
 
-/* TODO: FINISH, PARTICULARLY FOR PAGE 2 & PAGE 1 DESCRIPTION*/
+@media only screen and (max-width: 550px) {
+    .title {
+        white-space: normal !important;
+    }
+
+    .subtitle {
+        white-space: normal !important;
+    }
+
+    br.responsive{
+        display: none;
+    }
+}
