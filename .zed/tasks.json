@@ -1,0 +1,8 @@
+[
+  {
+    "label": "Launch Local Development Server",
+    "command": "npm http-server",
+    "args": ["$ZED_WORKTREE_ROOT", "-p 4000", "-c 01", "-o"],
+    "shell": "system"
+  }
+]

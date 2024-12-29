@@ -1,131 +1,480 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Ryan Comerford</title>
-
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="title" content="Ryan Comerford">
-    <meta name="description" content="Hi, I'm Ryan and I'm a developer.">
-    <meta name="keywords" content="Ryan,Comerford,Ryan Comerford,ryncmrfrd,ryancomerford.me,Profile,Web,CSS,HTML,JS,software engineer,software,angular,typescript,Software engineer,Java,Python,C++,Software development,Object-oriented programming,Web development,Mobile app development,Database design,Database management,Agile methodologies,DevOps,Cloud computing,Machine learning,Data science,Artificial intelligence,Computer science,Algorithms,Data structures,Git,Version control,Testing,Quality assurance,User experience,UX,Project management,Problem-solving,Communication skills,Teamwork,collaboration,Leadership skills,Technical writing">
-    <meta name="author" content="Ryan Comerford">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="ryancomerford.me">
-    <meta property="og:title" content="Ryan Comerford">
-    <meta property="og:description" content="Hi, I'm Ryan and I'm a developer.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="ryancomerford.me">
-    <meta property="twitter:title" content="Ryan Comerford">
-    <meta property="twitter:description" content="Hi, I'm Ryan and I'm a developer.">
-    <meta name="google-site-verification" content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q" />
-    <meta name="theme-color" content="#0077cc">
-    <meta name="msapplication-TileColor" content="#0077cc">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="build/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="build/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="build/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="build/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="build/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="build/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="build/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="build/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="build/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="build/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="build/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="build/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="build/favicons/favicon-16x16.png">
-
-    <link rel="stylesheet" href="./build/css/mvp.css" async>
-</head>
-<body>
-    <main>
+    <head>
+        <title>Ryan Comerford</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="Ryan Comerford" />
+        <meta
+            name="description"
+            content="Hi, I'm Ryan and I'm a software engineer building things people care about."
+        />
+        <meta
+            name="keywords"
+            content="Ryan,Comerford,Ryan Comerford,ryncmrfrd,ryancomerford.me,Profile,Web,CSS,HTML,JS,software engineer,software,angular,typescript,Software engineer,Java,Python,C++,Software development,Object-oriented programming,Web development,Mobile app development,Database design,Database management,Agile methodologies,DevOps,Cloud computing,Machine learning,Data science,Artificial intelligence,Computer science,Algorithms,Data structures,Git,Version control,Testing,Quality assurance,User experience,UX,Project management,Problem-solving,Communication skills,Teamwork,collaboration,Leadership skills,Technical writing"
+        />
+        <meta name="author" content="Ryan Comerford" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="30 days" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="ryancomerford.me" />
+        <meta property="og:title" content="Ryan Comerford" />
+        <meta
+            property="og:description"
+            content="Hi, I'm Ryan and I'm a software engineer building things people care about."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="ryancomerford.me" />
+        <meta property="twitter:title" content="Ryan Comerford" />
+        <meta
+            property="twitter:description"
+            content="Hi, I'm Ryan and I'm a software engineer building things people care about."
+        />
+        <meta
+            name="google-site-verification"
+            content="RaC2oR0K9ddINZenIO5-QUL_Zx46XdFiMiNqpAalO2Q"
+        />
+        <meta name="theme-color" content="#0077cc" />
+        <meta name="msapplication-TileColor" content="#0077cc" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="build/favicons/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="build/favicons/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="build/favicons/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="build/favicons/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="build/favicons/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="build/favicons/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="build/favicons/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="build/favicons/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="build/favicons/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="build/favicons/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="build/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="build/favicons/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="build/favicons/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            rel="preload"
+            href="./build/css/index.css"
+            async
+        />
+        <link rel="stylesheet" rel="preload" href="./build/css/mvp.css" async />
+    </head>
+    <body>
         <header>
             <figure>
-                <h1>😃</h1>
+                <img
+                    alt="Profile Picture"
+                    src="./build/img/profile.webp"
+                    class="profile"
+                    height="150"
+                    width="150"
+                    ;
+                />
             </figure>
-            <h1>Hi, I'm Ryan Comerford</h1>
-            <p>I'm a 3rd year Software Engineering student at RMIT and an intern at Agilent Technologies!</p>
+            <h1>
+                Hi
+                <img
+                    class="wave"
+                    src="./build/img/wave.webp"
+                    alt="Hand Waving Emoji"
+                    height="48"
+                    width="48"
+                />
+                I'm Ryan
+            </h1>
             <p>
-                <a href="https://github.com/ryncmrfrd" target="_blank" rel="noopener noreferrer"> <i>👨‍💻 My Github</i></a>
-                <a href="mailto:hello@ryancomerford.me" target="_blank" rel="noopener noreferrer"><b>✉️ Get in Touch</b></a>
-                <a href="/resume" target="_blank" rel="noopener noreferrer"><i>✉️ My Resume</i></a>
+                <b>
+                    I'm a third year software engineering student at RMIT and
+                    intern at Agilent Technologies.
+                </b>
+            </p>
+            <p style="text-align: left">
+                I am passionate about building software that matters to people.
+                I have skills in a variety of programming disciplines through my
+                software design and development education as well as my
+                on-the-job engineering experience. I love to build efficient,
+                readable, and maintainable solutions alongside teams that share
+                my passion.
+            </p>
+            <p>
+                <a
+                    href="https://github.com/ryncmrfrd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i>
+                        <img
+                            src="./build/img/github.webp"
+                            alt="Github Logo"
+                            height="24"
+                            width="24"
+                        />
+                        Github ↗
+                    </i>
+                </a>
+                <a
+                    href="mailto:hello@ryancomerford.me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i>
+                        <img
+                            src="./build/img/email.webp"
+                            alt="Letter Emoji"
+                            height="24"
+                            width="24"
+                        />
+                        Email ↗
+                    </i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/r-comerford/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i>
+                        <img
+                            src="./build/img/linkedin.webp"
+                            alt="Linkedin Logo"
+                            height="24"
+                            width="24"
+                        />
+                        Linkedin ↗
+                    </i>
+                </a>
             </p>
         </header>
-        <section>
-            <header>
-                <h1>Projects 📱</h1>
-                <p>These are a few of the things I've made for fun over the last few years.</p>
-            </header>
-            <aside>
-                <img src="./build/img/js.webp" height="100" width="100" alt="Javascript Logo">
-                <h2>Pageination.JS</h2>
-                <p>A Javascript library for creating single-page, responsive websites for free.</p>
-                <p><a href="https://ryncmrfrd.github.io/pageination" target="_blank" rel="noopener noreferrer"><b>View Demo</b></a></p>
-            </aside>
-            <aside>
-                <img src="./build/img/safc.webp" height="100" width="100" alt="Sunderland AFC Logo">
-                <h2>SunderlandAFC.TV</h2>
-                <p>The retro Sunderland fan site, with videos, player details, and statistics.</p>
-                <p><a href="https://sunderlandafc.tv" target="_blank" rel="noopener noreferrer"><b>View Site</b></a></p>
-            </aside>
-            <aside>
-                <img src="./build/img/tasks.webp" height="100" width="100" alt="Google Tasks Logo">
-                <h2>Tasks For Web</h2>
-                <p>A task-tracking web app built using the Google Tasks API.</p>
-                <p><a href="https://ryncmrfrd.github.io/tasksforweb" target="_blank" rel="noopener noreferrer"><b>View App</b></a></p>
-            </aside>
-            <ul>
-                <p><sup>Extension</sup> <a href="https://github.com/ryncmrfrd/tweetmyhistory" target="_blank" rel="noopener noreferrer">TweetMyHistory</a> Chrome extension which tweets your past searches.</p>
-                <p><sup>Script</sup> <a href="https://github.com/ryncmrfrd/pascal" target="_blank" rel="noopener noreferrer">JS Pascal's Triangle Generator</a> In just 114 bytes.</p>
-                <p><sup>Application</sup> <a href="https://github.com/ryncmrfrd/graphingcalculator" target="_blank" rel="noopener noreferrer">Graphing Calculator</a> Built using winforms and vb.net.</p>
-                <p><sup>Extension</sup> <a href="https://github.com/ryncmrfrd/lp" target="_blank" rel="noopener noreferrer">LP Auto Answer</a> An extension which does your second language homework for you.</p>
-                <p><sup>Website</sup> <a href="https://github.com/ryncmrfrd/lifx" target="_blank" rel="noopener noreferrer">Lifx Web Controller</a> Easily control your wifi lights from the web.</p>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h1>Achievements 🏆</h2>
-            <ul>
-	    	<li>Full Time Software Engineer Intern @ Agilent Technologies, 2024-2025</li>
-                <li>1st Place RMIT Activator Boeing Hackathon 2022</li>
-                <li>Top 12% of Software Development (VCE) Graduates 2021</li>
-                <li>3+ Repositories Featured in GitHub's Arctic Code Vault, 2020</li>
-                <li>Week Long Front End Developer Work Experience Placement @ Emprevo, 2019</li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h1>Education 🧑‍🎓</h2>
-            <ul>
-                <li>3rd Year Bachelor of Software Engineering, RMIT</li>
-                <li>Victorian Certificate of Education, Sandringham College</li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <header>
-                <h1>Personal Interests 🎊</h1>
-                <p>Here's a few of the things I enjoy outside of work and education.</p>
-            </header>
-            <aside>
-                <img src="./build/img/lego.webp" height="100" width="285" alt="Pile of LEGO Bricks">
-                <h2>LEGO 🧩</h2>
-                <p>Building sets always helps me unwind after a long week, and keeps me in touch with my 10-year-old self.</p>
-            </aside>
-            <aside>
-                <img src="./build/img/karting.webp" height="100" width="285" alt="Go Karting Helmet POV">
-                <h2>Go Karting 🏎️</h2>
-                <p>Over the last couple of years I've competed in several local kart leagues and have met some amazing people while doing it.</p>
-            </aside>
-            <aside>
-                <img src="./build/img/games.webp" height="100" width="285" alt="Stardew Valley Screenshot">
-                <h2>Video Games 🎮</h2>
-                <p>Gaming, especially with friends or family, is always a great way to relax while testing my creativity.</p>
-            </aside>
-        </section>
-    </main>
-    <footer>
-        <p>Made with ☕ by <code>Ryan Comerford</code><br></p>
-    </footer>
-</body>
+        <main>
+            <section>
+                <header>
+                    <h1>Experience</h1>
+                    <p>
+                        The jobs and acheivements that have taught me the skills
+                        I bring to work every day.
+                    </p>
+                </header>
+                <aside>
+                    <img
+                        src="./build/img/agilent.webp"
+                        alt="Agilent Technologies Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>Agilent Technologies</h2>
+                    <h3>Software Engineer Intern</h3>
+                    <p><i>February 2024 → Present</i></p>
+                    <p>
+                        Conducting investigations and PoCs, contributing to
+                        improving the software architecture by designing and
+                        implementing new microservices. Improving the efficiency
+                        and maintainability of automated testing by designing
+                        and implementing extensible and reusable test APIs.
+                    </p>
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/dominos.webp"
+                        alt="Domino's Pizza Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>Domino's Mordialloc</h2>
+                    <h3>Shift Manager</h3>
+                    <p><i>October 2019 → December 2023</i></p>
+                    <p>
+                        Supervising delivery drivers, customer service and food
+                        preparation staff in a constantly changing environment.
+                        Controlling operating costs such as food and labor while
+                        keeping balancing KPIs including margins and average
+                        delivery times.
+                    </p>
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/violin.webp"
+                        alt="Generic Company Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>Jody’s Violin Studio</h2>
+                    <h3>Technology Coordinator, Administration, and PA</h3>
+                    <p><i>December 2018 → March 2020</i></p>
+                    <p>
+                        Ensuring administration technologies are running
+                        smoothly as well as assisting and co-teaching group
+                        music classes with students from the age of 4 to 13.
+                        Assisting students who may need further help during
+                        class so the main teacher can remain on track.
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <sup>Education</sup>
+                        1ˢᵗ Place RMIT Activator Boeing Hackathon, 2022
+                    </li>
+                    <li>
+                        <sup>Education</sup>
+                        Top 12% of VCE Applied Computing: Software Development
+                        Graduates, 2021
+                    </li>
+                    <li>
+                        <sup>Personal</sup>
+                        3+ Repositories Featured in Github Arctic Code Vault,
+                        2020
+                    </li>
+                    <li>
+                        <sup>Work</sup>
+                        Front-End Developer Work Experience Placement at Emprevo
+                        Inc, 2019
+                    </li>
+                </ul>
+            </section>
+            <hr />
+            <section>
+                <header>
+                    <h1>Personal Projects</h1>
+                    <p>
+                        A few things things I've made for fun over the last
+                        couple of years.
+                    </p>
+                </header>
+                <aside>
+                    <img
+                        src="./build/img/js.webp"
+                        alt="Javascript Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>Pageination.JS</h2>
+                    <p>
+                        A free javascript library for creating responsive
+                        single-page websites.
+                    </p>
+                    <a
+                        href="https://github.com/ryncmrfrd/pageination"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><b>View Repo ↗</b></a
+                    >
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/safc.webp"
+                        alt="Sunderland AFC Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>SunderlandAFC.TV</h2>
+                    <p>
+                        The retro Sunderland AFC fan site, with videos, player
+                        details, and statistics.
+                    </p>
+                    <p>
+                        <a
+                            href="https://sunderlandafc.tv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><b>View Site ↗</b></a
+                        >
+                    </p>
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/tasks.webp"
+                        alt="Google Tasks Logo"
+                        height="100"
+                        width="100"
+                    />
+                    <h2>Tasks For Web</h2>
+                    <p>
+                        A task-tracking web app built using the Google Tasks
+                        API.
+                    </p>
+                    <p>
+                        <a
+                            href="https://ryncmrfrd.github.io/tasksforweb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><b>View App ↗</b></a
+                        >
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <sup>Library</sup>
+                        <a
+                            href="https://github.com/ryncmrfrd/pascal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Pascal's Triangle Generator ↗
+                        </a>
+                        Javascript function optomised to just 114 BYTES.
+                    </li>
+                    <li>
+                        <sup>Windows App</sup>
+                        <a
+                            href="https://github.com/ryncmrfrd/graphingcalculator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Winforms Graphing Calculator ↗
+                        </a>
+                        Built for my VCE Software Development class.
+                    </li>
+                    <li>
+                        <sup>Extension</sup>
+                        <a
+                            href="https://github.com/ryncmrfrd/lp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LP Auto Answer ↗
+                        </a>
+                        Chrome extension which automatically does your second
+                        language homework.
+                    </li>
+                    <li>
+                        <sup>Extension</sup>
+                        <a
+                            href="https://github.com/ryncmrfrd/tweetmyhistory"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Tweet My History ↗
+                        </a>
+                        Chrome extension which randomly tweets your search
+                        history.
+                    </li>
+                    <li>
+                        <sup>Web App</sup>
+                        <a
+                            href="https://github.com/ryncmrfrd/lifx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Lifx Web Controller ↗
+                        </a>
+                        Easily control your wifi connected lights from the web.
+                    </li>
+                </ul>
+            </section>
+            <hr />
+            <section>
+                <header>
+                    <h1>Outside of Work</h1>
+                    <p>
+                        Here's a few of the things I enjoy outside of work and
+                        education.
+                    </p>
+                </header>
+                <aside>
+                    <img
+                        src="./build/img/lego.webp"
+                        height="150"
+                        width="285"
+                        alt="Pile of LEGO Bricks"
+                    />
+                    <h2>LEGO</h2>
+                    <p>
+                        Building sets always helps me unwind after a long week,
+                        and keeps me in touch with my 10-year-old self.
+                    </p>
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/karting.webp"
+                        height="150"
+                        width="285"
+                        alt="Go Karting Helmet POV"
+                    />
+                    <h2>Go Karting</h2>
+                    <p>
+                        I compete in several local karting leagues, this photo
+                        is really of me! Thanks
+                        <a
+                            href="https://vhkc.com.au"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            VHKC! ↗
+                        </a>
+                    </p>
+                </aside>
+                <aside>
+                    <img
+                        src="./build/img/bg3.webp"
+                        height="150"
+                        width="285"
+                        alt="Baldur's Gate 3 Screenshot"
+                    />
+                    <h2>Video Games</h2>
+                    <p>
+                        Gaming, especially with my wonderful partner Madeline,
+                        is always a great way to connect while testing my
+                        creativity.
+                    </p>
+                </aside>
+            </section>
+        </main>
+    </body>
 </html>
